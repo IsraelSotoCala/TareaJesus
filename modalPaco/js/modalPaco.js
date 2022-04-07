@@ -1,21 +1,20 @@
 
-var modal = document.getElementById("ModalPosponer");
-var boton = document.getElementById("btnPosponer");
-var span = document.getElementsByClassName("cerrar")[0];
+$("#btnPosponer").on('click', function() {
+  $(".ModalCompleto").css("display", "block");
+});
+///Cerrar con X
+$(".cerrar").on('click', function() {
+    $(".ModalCompleto").css("display", "none");
+});
+
+//Cerrar Pulsando fuera
+$(".ModalCompleto").on('click', function() {
+    $(".ModalCompleto").css("display", "none");
+});
 
 
-boton.onclick = function() {
-  modal.style.display = "block";
-}
+//
+$('.ModalPosponer').on('click', function(e) {
+   e.stopPropagation();
 
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+});
