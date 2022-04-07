@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Modal Paco</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../scss/modalPaco.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    <button id="btnPosponer">botón</button>
+    <div id="ModalPosponer" class="ModalCompleto">
+        <div  class="ModalPosponer"><!--felx column-->
+
+            <div  class="ContenedorModal">
+
+                <div class="cabeceraModal"><!--Debe tener un flex row -->
+                    <h1>Posponer</h1>
+                    <span class="cerrar">x</span><!--La X que cierra el model-->              
+                </div>
+
+                <div class="cuerpoModel"><!--felx column-->
+                    <h4>Introducir fechas</h4>
+
+                    <p>Fechas</p>
+
+                    <div class="fechasInput"> <!--display flex row-->
+                        <input type="date" placeholder="Inicio">
+                        <input type="date" placeholder="Fin">
+                    </div>
+                </div>
+
+                <div class="footerModel"><!--El boton va a la dereha, flex felx-end-->
+                    <button>Guardar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src='../js/modalPaco.js'></script>
+</body>
+</html>
