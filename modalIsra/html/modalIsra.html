@@ -12,7 +12,7 @@
 
 <body>
 
-    <input type="button" value="Abrir compra peródica" onclick="abrir()">
+    <input type="button" value="Abrir compra peródica" class="boton-abrir">
 
 
     <!--modal-->
@@ -20,15 +20,20 @@
         <div class="modal-contenedor">
             <header class="modal-cabecera">
                 <span class="titulo-cabecera">COMPRA PERIÓDICA</span>
-                <span class="boton-cerrar" onclick="cerrar()">X</span>
+                <span class="boton-cerrar">X</span>
             </header>
             <div class="tipo-compra">
                 <div class="nueva-compra">
                     <span>NUEVA</span>
                 </div>
                 <div class="contenedor-existente">
+
                     <div role="button" class="compra-existente">
                         <span class="opcion-existente" onclick="desplegarSelect()">EXISTENTE</span>
+
+                    <div class="compra-existente">
+                        <button class="opcion-existente">EXISTENTE</button>
+
                     </div>
                     <select class="select-existente">
                     <option value="" disabled selected hidden>Seleccione Compra periódica</option>
