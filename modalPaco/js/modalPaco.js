@@ -1,19 +1,19 @@
-//Variables
+
 var modal = document.getElementById("ModalPosponer");
-var btn = document.getElementById("btnPosponer");
+var boton = document.getElementById("btnPosponer");
 var span = document.getElementsByClassName("cerrar")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+
+boton.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
