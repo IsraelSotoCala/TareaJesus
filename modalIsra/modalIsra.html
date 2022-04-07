@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Isra</title>
+    <link rel="stylesheet" href="modalIsra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <input type="button" value="Abrir compra peródica" onclick="abrir()">
+
+
+    <!--modal-->
+    <article class="modal">
+        <div class="modal-contenedor">
+            <header class="modal-cabecera">
+                <span class="titulo-cabecera">COMPRA PERIÓDICA</span>
+                <span class="boton-cerrar" onclick="cerrar()">X</span>
+            </header>
+            <div class="tipo-compra">
+                <div class="nueva-compra">
+                    <span>NUEVA</span>
+                </div>
+                <div class="contenedor-existente">
+                    <div class="compra-existente">
+                        <span class="opcion-existente" onclick="desplegarSelect()">EXISTENTE</span>
+                    </div>
+                    <select class="select-existente">
+                    <option value="" disabled selected hidden>Seleccione Compra periódica</option>
+                    <option>Ejemplo</option>
+                    <option>Ejemplo</option>
+                    <option>Ejemplo</option>
+                </select>
+                </div>
+            </div>
+            <footer class="pie-modal">
+                <span>a</span>
+            </footer>
+        </div>
+    </article>
+
+    <script src="modalIsra.js"></script>
+</body>
+
+</html>
