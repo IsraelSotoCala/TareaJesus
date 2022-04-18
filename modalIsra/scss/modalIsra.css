@@ -53,6 +53,10 @@ body {
   font-size: 24px;
   padding: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .modal .modal-contenedor .tipo-compra {
