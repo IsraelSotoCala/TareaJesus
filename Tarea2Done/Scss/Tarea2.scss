@@ -208,6 +208,9 @@
         flex-direction: column;
         justify-content: end;
         margin-right: 20px;
+        flex: 1 1 100%;
+        width: calc(100% - 40px);
+        padding: 0 20px;
         span {
             font-weight: bold;
         }
@@ -232,6 +235,7 @@
     }
     .newsletter-enviar {
         display: none;
+        align-self: flex-end;
         span {
             color: red;
             font-weight: bold;
