@@ -1,0 +1,83 @@
+.cmp-filtros{
+
+    .ContenedorPrincipal{
+        display: flex;
+        flex-direction: column;
+       
+        #FiltroPildoras{
+            display: flex;
+            flex-direction: row;
+
+            .contenedorPildora{
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+                background-color: gray;
+                border-radius: 10px;
+                height: 40px;
+                p{
+                    margin-left: 10px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .FiltrarPor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            #EliminarTodo{
+                cursor: pointer;
+            }
+        }
+       
+
+        .FiltroMarca{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+            .LimpiarFiltro{
+                
+                display: flex;
+                flex-direction: row; 
+                #LimpiarMarca{
+                    
+                    cursor: pointer;
+                }
+            }
+      
+        }
+
+        .FiltroPro{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .LimpiarFiltro{
+                display: flex;
+                flex-direction: row; 
+
+                a{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .active{        
+            display: block;   
+    }
+    
+    .desactive{
+            display: none;
+        }
+     
+}
+
