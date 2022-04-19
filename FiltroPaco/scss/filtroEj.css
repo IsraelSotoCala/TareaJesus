@@ -1,0 +1,126 @@
+.cmp-filtros .ContenedorPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cmp-filtros .ContenedorPrincipal #FiltroPildoras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cmp-filtros .ContenedorPrincipal #FiltroPildoras .contenedorPildora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.cmp-filtros .ContenedorPrincipal #FiltroPildoras .contenedorPildora p {
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.cmp-filtros .ContenedorPrincipal #FiltroPildoras .contenedorPildora img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltrarPor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltrarPor #EliminarTodo {
+  cursor: pointer;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroMarca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroMarca .LimpiarFiltro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroMarca .LimpiarFiltro #LimpiarMarca {
+  cursor: pointer;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroPro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroPro .LimpiarFiltro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cmp-filtros .ContenedorPrincipal .FiltroPro .LimpiarFiltro a {
+  cursor: pointer;
+}
+
+.cmp-filtros .active {
+  display: block;
+}
+
+.cmp-filtros .desactive {
+  display: none;
+}
+/*# sourceMappingURL=filtroEj.css.map */
