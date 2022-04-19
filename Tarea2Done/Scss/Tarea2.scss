@@ -46,7 +46,7 @@
 
 
 .cmp-contenido{
-   
+   margin-bottom: 10px;
     .ContendorImg{
         max-width: 1440px;
         max-height: 449px;
@@ -305,11 +305,18 @@
             flex-direction: column;
             width: 100%;
             height: 100%;
+            .ContenedorIzq{
+                width: 100%;
+                margin-left: 0px;
+            }
+            .ContenedorDrch{
+                float: none;
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 0px;
+            }
         }
-        .ContenedorDrch{
-            float: none;
-            margin-top: 20px;
-        }
+       
     }
     //footer
     .cmp-footer {
