@@ -27,21 +27,24 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-right: 10px;
-  background-color: gray;
+  background-color: #E9E6EE;
   border-radius: 10px;
-  height: 40px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cmp-filtros .ContenedorPrincipal #FiltroPildoras .contenedorPildora p {
   margin-left: 10px;
-  margin-bottom: 50px;
 }
 
 .cmp-filtros .ContenedorPrincipal #FiltroPildoras .contenedorPildora img {
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  margin-top: 10px;
 }
 
 .cmp-filtros .ContenedorPrincipal .FiltrarPor {
@@ -62,7 +65,7 @@
   cursor: pointer;
 }
 
-.cmp-filtros .ContenedorPrincipal .FiltroMarca {
+.cmp-filtros .ContenedorPrincipal .content-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +78,7 @@
           justify-content: space-between;
 }
 
-.cmp-filtros .ContenedorPrincipal .FiltroMarca .LimpiarFiltro {
+.cmp-filtros .ContenedorPrincipal .content-filter .LimpiarFiltro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,37 +86,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.cmp-filtros .ContenedorPrincipal .FiltroMarca .LimpiarFiltro #LimpiarMarca {
   cursor: pointer;
 }
 
-.cmp-filtros .ContenedorPrincipal .FiltroPro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.cmp-filtros .ContenedorPrincipal .FiltroPro .LimpiarFiltro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.cmp-filtros .ContenedorPrincipal .FiltroPro .LimpiarFiltro a {
-  cursor: pointer;
+.cmp-filtros .ContenedorPrincipal .limpiar-bloque {
+  color: red;
 }
 
 .cmp-filtros .active {
@@ -122,5 +99,21 @@
 
 .cmp-filtros .desactive {
   display: none;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no;
+}
+
+.plus-icon {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItcGx1cyI+PGxpbmUgeDE9IjEyIiB5MT0iNSIgeDI9IjEyIiB5Mj0iMTkiPjwvbGluZT48bGluZSB4MT0iNSIgeTE9IjEyIiB4Mj0iMTkiIHkyPSIxMiI+PC9saW5lPjwvc3ZnPg==");
+}
+
+.minus-icon {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItbWludXMiPjxsaW5lIHgxPSI1IiB5MT0iMTIiIHgyPSIxOSIgeTI9IjEyIj48L2xpbmU+PC9zdmc+");
 }
 /*# sourceMappingURL=filtroEj.css.map */
