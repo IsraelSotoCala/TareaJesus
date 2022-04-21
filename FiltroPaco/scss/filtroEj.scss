@@ -12,18 +12,20 @@
                 display: flex;
                 flex-direction: row;
                 margin-right: 10px;
-                background-color: gray;
+                background-color: #E9E6EE;
                 border-radius: 10px;
-                height: 40px;
+                height: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
+                align-items: center;
                 p{
-                    margin-left: 10px;
-                    margin-bottom: 50px;
+                    margin-left: 10px;  
                 }
                 img{
                     width: 20px;
                     height: 20px;
                     margin-left: 10px;
-                    margin-top: 10px;
+                 
                 }
             }
         }
@@ -39,7 +41,7 @@
         }
        
 
-        .FiltroMarca{
+        .content-filter{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -48,28 +50,28 @@
                 
                 display: flex;
                 flex-direction: row; 
-                #LimpiarMarca{
-                    
-                    cursor: pointer;
-                }
+               cursor: pointer;
+             
             }
       
         }
-
-        .FiltroPro{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .LimpiarFiltro{
-                display: flex;
-                flex-direction: row; 
-
-                a{
-                    cursor: pointer;
-                }
-            }
+        .limpiar-bloque{
+            color: red;
         }
+        // .FiltroPro{
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: space-between;
+
+        //     .LimpiarFiltro{
+        //         display: flex;
+        //         flex-direction: row; 
+
+        //         a{
+        //             cursor: pointer;
+        //         }
+        //     }
+        // }
     }
     .active{        
             display: block;   
@@ -81,3 +83,18 @@
      
 }
 
+.icon{
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no;
+}
+
+.plus-icon{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItcGx1cyI+PGxpbmUgeDE9IjEyIiB5MT0iNSIgeDI9IjEyIiB5Mj0iMTkiPjwvbGluZT48bGluZSB4MT0iNSIgeTE9IjEyIiB4Mj0iMTkiIHkyPSIxMiI+PC9saW5lPjwvc3ZnPg==");
+}
+
+.minus-icon{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItbWludXMiPjxsaW5lIHgxPSI1IiB5MT0iMTIiIHgyPSIxOSIgeTI9IjEyIj48L2xpbmU+PC9zdmc+");
+}
