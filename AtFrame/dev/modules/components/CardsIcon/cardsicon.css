@@ -1,0 +1,73 @@
+.cmp-cardsicon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 10px; }
+  .cmp-cardsicon h2 {
+    font-family: 'OpenSans-Bold'; }
+  .cmp-cardsicon h3 {
+    font-family: 'OpenSans-Regular'; }
+  .cmp-cardsicon .ContenedorPrincipal {
+    display: flex;
+    flex-direction: row; }
+    .cmp-cardsicon .ContenedorPrincipal .Columna {
+      margin-right: 25px; }
+    .cmp-cardsicon .ContenedorPrincipal .contenedorCard {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 300px;
+      min-height: 120px; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard img {
+        width: 28px;
+        height: 21px; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard .contenedorCardG {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: calc(100% - 20px);
+        padding-bottom: 15px; }
+        .cmp-cardsicon .ContenedorPrincipal .contenedorCard .contenedorCardG img {
+          width: 44px;
+          height: 44px;
+          margin-top: 30px;
+          margin-left: 25px;
+          filter: invert(1); }
+        .cmp-cardsicon .ContenedorPrincipal .contenedorCard .contenedorCardG h4 {
+          font-size: 21px;
+          margin-top: 40px;
+          margin-left: 15px;
+          color: white; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard .contenedorCardP {
+        display: flex;
+        justify-content: flex-end;
+        height: 20px; }
+        .cmp-cardsicon .ContenedorPrincipal .contenedorCard .contenedorCardP img {
+          filter: invert(1);
+          width: 20px;
+          margin-right: 10px; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.orangeCard .contenedorCardG {
+        background-color: #e4b143; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.orangeCard .contenedorCardP {
+        background-color: #e19700; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.blueCard .contenedorCardG {
+        background-color: #86c2d4; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.blueCard .contenedorCardP {
+        background-color: #7ab8c6; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.redCard .contenedorCardG {
+        background-color: #cc5a3e; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.redCard .contenedorCardP {
+        background-color: #c04f3a; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.aquamarineCard .contenedorCardG {
+        background-color: #85b9ae; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.aquamarineCard .contenedorCardP {
+        background-color: #79a99d; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.yellowGCard .contenedorCardG {
+        background-color: #c2d050; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.yellowGCard .contenedorCardP {
+        background-color: #bbc44a; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.limeCard .contenedorCardG {
+        background-color: #8db63c; }
+      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.limeCard .contenedorCardP {
+        background-color: #82a63c; }
