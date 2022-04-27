@@ -1,20 +1,9 @@
-var deaths=[];
-var pruebas=[];
-var numeros=[];
-var pruebas2;
-
-// fetch('https://raw.githubusercontent.com/bence-toth/covid-data/main/data/died/cumulative/exact/canada.json')
-//   .then(response => response.json())
-//   .then(result => {
-//    pruebas2=result.cumulativeDeaths
-//   })
 
 const api_url='https://raw.githubusercontent.com/bence-toth/covid-data/main/data/died/cumulative/exact/spain.json'
 
 var datos;
 
 function myFunc(success) {
-  //do what you want HERE.
   datos = success.cumulativeDeaths
   console.log(datos)
   var arr;
@@ -43,7 +32,7 @@ function myFunc(success) {
       options: {}
   });
   }
-  
+  console.log(datos)
   fetch(api_url)
       .then(data => data.json())
       .then(success => myFunc(success));
