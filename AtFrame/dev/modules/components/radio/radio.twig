@@ -1,0 +1,110 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+<style>
+    h4{
+        margin-bottom:10px;
+    }
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+</style>
+<div class="cmp-radio">
+       <h1>Atom-Radio</h1>
+       
+       <div>
+
+        <div>
+            <h4>Radio checked<h4>
+            <label class="container--label">opción 1
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label">opción 1
+                <input type="radio" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Radio default<h4>
+            <label class="container--label">opción 2
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label">opción 2
+                <input type="radio">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Radio disabled<h4>
+                <label class="container--label radio  radio-disabled">opción 3
+            <input type="radio" name="radio" class="check check-disabled" disabled>
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label radio  radio-disabled">opción 3
+                <input  type="radio">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+         <div>
+            <h4>Radio disabled checked<h4>
+                <label class="container--label radio  radio-disabled">opción 4
+            <input type="radio" checked="checked"disabled>
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label radio  radio-disabled">opción 4
+                <input name="radio" type="radio">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+       <div>
+            <h4>Radio disabled <h4>
+                <label class="container--switch ">
+            <input type="radio" name="radioS" >
+            <span class="checkmark round"></span>
+            </label>
+            <xmp>
+            <label class="container--switch">opción 4
+                <input name="radioS" type="radio">
+                <span class="checkmark round"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Radio switch checked<h4>
+                <label class="container--switch ">
+            <input type="radio" name="radioS" checked="checked" >
+            <span class="checkmark round"></span>
+            </label>
+            <xmp>
+            <label class="container--switch">opción 4
+                <input name="radio" type="radio" checked="checked">
+                <span class="checkmark round"></span>
+            </label>
+            </xmp>
+        </div>
+
+    
+    </div>
+
+{% endblock %}
