@@ -1,0 +1,161 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+<style>
+   
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+    h1{
+        font-size:70px;
+        margin-bottom:15px
+    }
+    .cmp-textarea{
+        margin-top:0;
+        background-color:white;
+    }
+    h2{
+        font-size:20px;
+        font-family:Opensans-bold;
+    }
+    h4{
+       
+        margin-bottom:10px;}
+  
+</style>
+
+<div class="cmp-textarea"> 
+<h1>Atom TextArea</h1>
+<div>
+    <h2>Por defecto</h2>
+
+    <div>
+
+        <textarea></textarea>
+        
+        <xmp><textarea></textarea></xmp>
+
+    </div>
+</div>
+<!--Redimensionar-->
+<div>
+    <h2>Redimensionamientos</h2>
+
+    <div>
+        <h4>Redimensionar solo vertical</h4>
+
+        <textarea class="txtarea-resize-vertical"></textarea>
+
+        <xmp><textarea class="txtarea-resize-vertical"></textarea></xmp>
+
+        <h4>Redimensionar solo horizontal</h4>
+
+        <textarea class="txtarea-resize-horizontal"></textarea>
+
+        <xmp><textarea class="txtarea-resize-horizontal"></textarea></xmp>
+
+        <h4>Sin redimensionar</h4>
+
+        <textarea class="txtarea-no-resize" ></textarea>
+
+        <xmp><textarea class="txtarea-no-resize" ></textarea></xmp>
+
+
+
+    </div>
+</div>
+<!--Solo lectura-->
+<div>
+    <h2>Solo lectura</h2>
+
+    <div>
+
+        <textarea readonly>Esto es un ejemplo de solo lectura</textarea>
+
+        <xmp><textarea readonly>Esto es un ejemplo de solo lectura</textarea></xmp>
+
+
+    </div>
+
+</div>
+<!--Tamaños-->
+<div>
+    <h2>Tamaños</h2>
+
+    <div>
+        <h4>Large</h4>
+        <textarea class="txtarea-lg"></textarea>
+        
+        <xmp><textarea class="txtarea-lg"></textarea>
+        </xmp>  
+    </div>
+
+    <div>
+        <h4>Small</h4>
+        <textarea class="txtarea-sm"></textarea>
+        
+        <xmp><textarea class="txtarea-sm"></textarea>
+        </xmp>  
+    </div>
+</div>
+    <!--Textarea disable-->
+<div>
+    <h2>Desactivado</h2>
+
+    <div>
+        <textarea class="txtarea-disable" disabled></textarea>
+        
+        <xmp><textarea class="txtarea-disable" disabled></textarea>
+        </xmp>  
+    </div>
+</div>
+    <!--Efectos-->
+<div>
+    <h2>Efectos</h2>
+
+    <div>
+        <h4>Round borders</h4>
+        <textarea class="txtarea-round-borders"></textarea>
+        
+        <xmp><textarea class="txtarea-round-borders"></textarea>
+        </xmp>  
+    </div>
+
+    <div>
+        <h4>Shadow</h4>
+        <textarea class="txtarea-shadow"></textarea>
+        
+        <xmp><textarea class="txtarea-shadow"></textarea>
+        </xmp>  
+    </div>
+</div>
+    <!--Error-->
+<div>
+    <h2>Error</h2>
+
+    <div>
+        <textarea class="txtarea-error"  rows="4"></textarea>
+        <span class="error-message">Error al introducir el texto</span>
+        <xmp><textarea class="txtarea-error"  rows="4"></textarea>
+        </xmp>  
+    </div>
+</div>
+
+
+
+
+    
+</div>
+
+
+
+
+
+
+{% endblock %}

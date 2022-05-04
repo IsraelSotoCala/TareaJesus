@@ -1,0 +1,112 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+<style>
+
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+      h4{
+        margin-bottom:10px;
+    }
+</style>
+
+<div class="cmp-checkbox">
+       <h1>Atom-Checkbox</h1>
+       
+       <div>
+     
+
+        <div>
+            <h4>Checkbox checked<h4>
+            <label class="container--label">opción 1
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label">opción 1
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Checkbox default<h4>
+            <label class="container--label">opción 2
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label">opción 2
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Checkbox disabled<h4>
+            <label class="container--label check check-disabled">opción 3
+            <input type="checkbox" disabled>
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label">opción 3
+                <input class="check check-disabled" type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Checkbox disabled checked<h4>
+            <label class="container--label check check-disabled">opción 4
+            <input type="checkbox" checked="checked" disabled>
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--label check check-disabled">opción 4
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Checkbox switch<h4>
+            <label class="container--switch ">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--switch">opción 5
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+
+        <div>
+            <h4>Checkbox switch checked<h4>
+            <label class="container--switch ">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <xmp>
+            <label class="container--switch">opción 6
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            </xmp>
+        </div>
+   
+    </div>
+
+{% endblock %}

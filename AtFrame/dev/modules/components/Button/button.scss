@@ -1,45 +1,137 @@
-.cmp-boton{
-    display: flex;
-    flex-direction: column;
-
-    .colores{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .btn{
-        margin-right: 10px;
+@import "../../../_scss/variables/colors";
+.cmp-boton {
+    // display: flex;
+    // flex-direction: column;
+    // .colores {
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+    .btn {
+        font-family: map-get($variablesbuttons, font-family);
         display: inline-block;
-        font-weight: 400;
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
-        border: 1px solid transparent;
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
+        border: map-get($variablesbuttons, bordersize) solid transparent;
+        padding: 4px 10px;
+        font-size: 16px;
         line-height: 1.5;
-        border-radius: 0.25rem;
         cursor: pointer;
-        
-        &.btn-primary{
-            background-color: red;
-            color: white; 
+        background-color: map-get($colors, orangeAt);
+        color: map-get($colors, white);
+        &.btn-primary {
+            background-color: map-get($colors, c-primary);
+            color: map-get($colors, white);
+          
         }
-        &.btn-secondary{
-            background-color: blue;
-            color: white;
+        &.btn-secondary {
+            background-color: map-get($colors, secondary);
+            color: map-get($colors, white);
+            &::after {
+                background-color: lightblue;
+            }
         }
-        &.btn-tertiary{
-            background-color: green;
-            color: white;
+        &.btn-tertiary {
+            background-color: map-get($colors, tertiary);
+            color: map-get($colors, white);
         }
-        &.btn-dark{
-            background-color: black;
-            color: white;
+        &.btn-dark {
+            background-color: map-get($colors, dark);
+            color: map-get($colors, white);
         }
-        &.btn-light{
-            background-color: whitesmoke;
+        &.btn-light {
+            background-color: map-get($colors, light);
+            color: map-get($colors, dark);
         }
+        /*Contorno y texto*/
+        &.btn-outline-primary {
+            background-color: transparent;
+            color: map-get($colors, c-primary);
+            border-color: map-get($colors, c-primary);
+        }
+        &.btn-outline-secondary {
+            background-color: transparent;
+            color: map-get($colors, secondary);
+            border-color: map-get($colors, secondary);
+        }
+        &.btn-outline-tertiary {
+            background-color: transparent;
+            color: map-get($colors, tertiary);
+            border-color: map-get($colors, tertiary);
+        }
+        &.btn-outline-dark {
+            background-color: transparent;
+            color: map-get($colors, dark);
+            border-color: map-get($colors, dark);
+        }
+        &.btn-outline-light {
+            background-color: transparent;
+            color: map-get($colors, dark);
+        }
+        /*Tamaños*/
+        &.btn-lg {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        &.btn-sm {
+            padding: 5px 5px;
+            font-size: 10px;
+        }
+        /*Estado Activo/inactivo*/
+        &.btn-disable {
+            opacity: 45%;
+            cursor: default;
+        }
+        &.btn-active {
+            font-family: map-get($variablesbuttons, font-bold );
+        }
+        //Formas 
+        &.btn-round {
+            border-radius: 50%;
+        }
+        &.btn-borderRound {
+            border-radius: 5px;
+        }
+        //Efectos
+        &.btn-shadowbox {
+            box-shadow: 6px 9px 8px -1px rgba(0, 0, 0, 0.61);
+        }
+        &.icon-btn {
+            &--right {
+                span {
+                    margin-right: 10px;
+                }
+                img {
+                    filter: invert(1);
+                    float: right;
+                }
+            }
+            &--left {
+                span {
+                    margin-left: 10px;
+                }
+                img {
+                    filter: invert(1);
+                    float: left;
+                }
+            }
+        }
+
+        &:hover{
+            &.btn-primary{
+            background-color: map-get($colors, c-primary-light);
+            }
+
+            &.btn-secondary{
+                box-shadow: -1px 0px 9px 5px rgba(0, 0, 0, 0.61);
+            }
+        }
+
+        &:focus{
+            &.btn{
+                box-shadow: -1px 0px 9px 5px map-get($colors, focusBlue);
+            }
+        }
+
     }
 }
-
