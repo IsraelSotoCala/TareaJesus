@@ -1,0 +1,134 @@
+@import "../../../_scss/variables/colors";
+.cmp-inpdate {
+    .inp-date {
+        display: block;
+        width: 30%;
+        padding: 4px 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: map-get($colors, dark);
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid map-get($colors, dark);
+        //Background colors
+        &.inp-date-error {
+            background-color: map-get($colors, c-primary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.inp-date-secondary {
+            background-color: map-get($colors, secondary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.inp-date-tertiary {
+            background-color: map-get($colors, tertiary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.inp-date-dark {
+            background-color: map-get($colors, dark);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.inp-date-light {
+            background-color: map-get($colors, light);
+            &::placeholder {
+                color: map-get($colors, dark);
+            }
+        }
+        //Contorno y dateo
+        &.inp-date-outline-error {
+            background-color: transparent;
+            border-color: map-get($colors, c-primary);
+            color: map-get($colors, c-primary);
+            &::placeholder {
+                color: map-get($colors, c-primary);
+            }
+        }
+        &.inp-date-outline-secondary {
+            background-color: transparent;
+            border-color: map-get($colors, secondary);
+            color: map-get($colors, secondary);
+            &::placeholder {
+                color: map-get($colors, secondary);
+            }
+        }
+        &.inp-date-outline-tertiary {
+            background-color: transparent;
+            border-color: map-get($colors, tertiary);
+            color: map-get($colors, tertiary);
+            &::placeholder {
+                color: map-get($colors, tertiary);
+            }
+        }
+        &.inp-date-outline-dark {
+            background-color: transparent;
+            border-color: map-get($colors, dark);
+            color: map-get($colors, dark);
+            &::placeholder {
+                color: map-get($colors, dark);
+            }
+        }
+        &.inp-date-outline-light {
+            background-color: transparent;
+            border-color: map-get($colors, light);
+            color: map-get($colors, light);
+            &::placeholder {
+                color: map-get($colors, light);
+            }
+        }
+        //Tamaños
+        &.inp-date-lg {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        &.inp-date-sm {
+            padding: 5px 5px;
+            font-size: 10px;
+            width: 10%;
+        }
+        //Estado 
+        &.inp-date-disable {
+            opacity: 45%;
+            pointer-events: none;
+            cursor: default;
+        }
+        &.inp-date-active {
+            border: 3px solid map-get($colors, dark);
+        }
+        //Forma
+        &.inp-date-round {
+            text-align: center;
+            border-radius: 50%;
+            &::placeholder {
+                position: center;
+            }
+        }
+        &.inp-date-borderradius {
+            border-radius: 5px;
+        }
+        //Efectos
+        &.inp-date-shadowbox {
+            box-shadow: 6px 9px 8px -1px rgba(0, 0, 0, 0.61);
+        }
+        //Focus 
+        &.inp-date-inpgrow {
+            transition: width 0.4s ease-in-out;  
+        }
+        &:hover{
+            &.inp-date{
+                border: 3px solid map-get($colors, dark);
+            }
+        }
+        &:focus {
+            &.inp-date-inpgrow {
+                width: 100%;
+            }
+        }
+    }
+}

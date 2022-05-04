@@ -1,0 +1,189 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+<style>
+   
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+    h1{
+        font-size:70px;
+        margin-bottom:15px
+    }
+    .cmp-inputtext{
+        margin-top:0;
+        background-color:white;
+    }
+    h4{
+       
+        margin-bottom:10px;
+    }
+  
+</style>
+
+<div class="cmp-inptext">
+
+ <h1>Atom-InputText</h1>
+       
+       <!--Colores-->
+       <div>
+        <h2>Colores background</h2>
+        <hr>
+        <div>
+            <h4>input error<h4>
+            <input type="text" class="input input-error" placeholder="Escriba aquí">
+            <span class="span-error">Dato incorrecto</span>
+            <xmp> <input type="text" class="input input-error" placeholder="Escriba aquí">
+                   <span class="span-error">Dato incorrecto</span>
+                </xmp>
+        </div>
+
+        <div>
+            <h4>input Azul<h4>
+            <input type="text" class="input input-secondary" placeholder="Escriba aquí">
+            <xmp><input type="text" class="input input-secondary" placeholder="Escriba aquí"></xmp>
+        </div>
+
+        <div>
+            <h4>input verde<h4>
+            <input type="text" class="input input-tertiary" placeholder="Escriba aquí">
+            <xmp><input type="text" class="input input-tertiary" placeholder="Escriba aquí"></xmp>
+        </div>
+        
+        <div>
+            <h4>input dark<h4>
+            <input type="text" class="input input-dark" placeholder="Escriba aquí">
+            <xmp><input type="text" class="input input-dark" placeholder="Escriba aquí"></xmp>
+        </div>
+
+        <div>
+            <h4>input light<h4>
+            <input type="text" class="input input-light" placeholder="Escriba aquí">
+            <xmp><input type="text" class="input input-light" placeholder="Escriba aquí"></xmp>
+        </div>
+        
+
+        </div> 
+
+    <!--Contornos-->
+        <div>
+            <h2>Contornos</h2>
+            <div>
+                <h4>Input contorno error</h4>
+                <input type="text" class="input input-outline-error" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-error" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno azul</h4>
+                <input type="text" class="input input-outline-secondary" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-secondary" placeholder="Escriba aquí"></xmp>
+            </div>
+            
+            <div>
+                <h4>Input contorno verde</h4>
+                <input type="text" class="input input-outline-tertiary" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-tertiary" placeholder="Escriba aquí"</xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno blanco</h4>
+                <input type="text" class="input input-outline-light" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-light" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno negro</h4>
+                <input type="text" class="input input-outline-dark" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-dark" placeholder="Escriba aquí"></xmp>
+            </div>
+
+             <div>
+                <h4>Input con línea</h4>
+                <input type="text" class="input input-line" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-outline-dark" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Tamaño-->
+
+        <div>
+            <h2>Tamaños</h2>
+
+            <div>
+                <h4>Input grande</h4>
+                <input type="text" class="input input-lg" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-lg" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input pequeño</h4>
+                <input type="text" class="input input-sm" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-sm" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Estado-->
+
+        <div>
+            <h2>Estado</h2>
+            <div>
+                <h4>Input desactivado</h4>
+                <input type="text" class="input input-disable" placeholder="Escriba aquí" disabled="disabled">
+                <xmp><input type="text" class="inputinput input-disable" placeholder="Escriba aquí" disabled="disabled"></xmp>
+            </div>
+
+        </div>
+
+    <!--Interacciones-->
+    <div>
+
+            <div>
+                <h4>Input grow</h4>
+                <input type="text" class="input input-inpgrow" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-inpgrow" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Formas-->
+
+        <div>
+            <h2>Forma</h2>
+
+            <div>
+                <h4>Input con bordes redondeado</h4>
+                <input type="text" class="input input-borderradius" placeholder="Escriba aquí">
+                <xmp><input type="text" class="input-borderradius" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Efectos-->
+
+        <div>
+            <h2>Efectos</h2>
+
+            <div>
+                <h4>Sombra</h4>
+                <input type="text" class="input input-shadowbox" placeholder="Escriba aquí">
+                <xmp><input type="text" class="inputinput input-shadowbox" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+
+
+</div>
+
+
+
+{% endblock %}

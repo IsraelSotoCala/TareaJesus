@@ -1,3 +1,4 @@
+              
 .cmp-cardsicon {
   display: flex;
   flex-direction: column;
@@ -47,27 +48,3 @@
           filter: invert(1);
           width: 20px;
           margin-right: 10px; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.orangeCard .contenedorCardG {
-        background-color: #e4b143; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.orangeCard .contenedorCardP {
-        background-color: #e19700; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.blueCard .contenedorCardG {
-        background-color: #86c2d4; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.blueCard .contenedorCardP {
-        background-color: #7ab8c6; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.redCard .contenedorCardG {
-        background-color: #cc5a3e; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.redCard .contenedorCardP {
-        background-color: #c04f3a; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.aquamarineCard .contenedorCardG {
-        background-color: #85b9ae; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.aquamarineCard .contenedorCardP {
-        background-color: #79a99d; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.yellowGCard .contenedorCardG {
-        background-color: #c2d050; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.yellowGCard .contenedorCardP {
-        background-color: #bbc44a; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.limeCard .contenedorCardG {
-        background-color: #8db63c; }
-      .cmp-cardsicon .ContenedorPrincipal .contenedorCard.limeCard .contenedorCardP {
-        background-color: #82a63c; }

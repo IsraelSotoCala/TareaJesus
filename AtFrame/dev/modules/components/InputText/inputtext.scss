@@ -1,0 +1,158 @@
+@import "../../../_scss/variables/colors";
+.cmp-inptext {
+    input {
+        display: block;
+        width: 30%;
+        padding: 4px 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: map-get($colors, dark);
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid map-get($colors, dark);
+        //Background colors
+        &:focus{
+            outline: none;
+            &.input-error{
+               border: map-get($variablesbuttons, bordersize) solid blue;
+                margin: -1px;
+            }
+        }
+        &.input-error {
+            background-color: map-get($colors, c-primary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+            
+            
+        }
+        
+        &.input-secondary {
+            background-color: map-get($colors, secondary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.input-tertiary {
+            background-color: map-get($colors, tertiary);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.input-dark {
+            background-color: map-get($colors, dark);
+            &::placeholder {
+                color: map-get($colors, white);
+            }
+        }
+        &.input-light {
+            background-color: map-get($colors, light);
+            &::placeholder {
+                color: map-get($colors, dark);
+            }
+        }
+        //Contorno y texto
+        &.input-outline-error {
+            background-color: transparent;
+            border-color: map-get($colors, c-primary);
+            color: map-get($colors, c-primary);
+            &::placeholder {
+                color: map-get($colors, c-primary);
+            }
+        }
+        &.input-outline-secondary {
+            background-color: transparent;
+            border-color: map-get($colors, secondary);
+            color: map-get($colors, secondary);
+            &::placeholder {
+                color: map-get($colors, secondary);
+            }
+        }
+        &.input-outline-tertiary {
+            background-color: transparent;
+            border-color: map-get($colors, tertiary);
+            color: map-get($colors, tertiary);
+            &::placeholder {
+                color: map-get($colors, tertiary);
+            }
+        }
+        &.input-outline-dark {
+            background-color: transparent;
+            border-color: map-get($colors, dark);
+            color: map-get($colors, dark);
+            &::placeholder {
+                color: map-get($colors, dark);
+            }
+        }
+        &.input-outline-light {
+            background-color: transparent;
+            border-color: map-get($colors, light);
+            color: map-get($colors, light);
+            &::placeholder {
+                color: map-get($colors, light);
+
+            }
+        }
+
+        &.input-line{
+            border: 0;
+            border-bottom: 2px solid black;
+            background-color: transparent;
+            &::placeholder {
+                color: map-get($colors, dark);
+            }
+        }
+
+        //Tamaños
+        &.input-lg {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        &.input-sm {
+            padding: 5px 5px;
+            font-size: 10px;
+            width: 10%;
+        }
+        //Estado 
+        &.input-disable {
+            opacity: 45%;
+            cursor: default;
+            pointer-events: none;
+        }
+        &.input-active {
+            border: 3px solid map-get($colors, dark);
+        }
+        //Forma
+        &.input-round {
+            text-align: center;
+            border-radius: 50%;
+            &::placeholder {
+                position: center;
+            }
+        }
+        &.input-borderradius {
+            border-radius: 5px;
+        }
+        //Efectos
+        &.input-shadowbox {
+            box-shadow: 6px 9px 8px -1px rgba(0, 0, 0, 0.61);
+        }
+        //Focus 
+        &.input-inpgrow {
+            transition: width 0.4s ease-in-out;  
+        }
+        &:hover{
+           &.input-line{
+               border-color: map-get($colors, secondary);
+           }
+        }
+        &:focus {
+            &.input-inpgrow {
+                width: 100%;
+            }
+        }
+    }
+    .span-error{
+        color: map-get($colors, c-primary) ;
+    }
+}

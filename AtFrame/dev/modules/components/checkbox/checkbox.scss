@@ -1,0 +1,112 @@
+@import "../../../_scss/variables/colors";
+.cmp-checkbox {
+    //CheckBox Personalizable
+    .container {
+        &--label {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                &:checked {
+                    ~.checkmark {
+                        background-color: map-get($colors, orangeAt);
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: map-get($variablesCheck, white);
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 9px;
+                    top: 5px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid map-get($colors, white);
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        &--switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                &:checked {
+                    +.checkmark {
+                        background-color: map-get($colors, orangeAt);
+                        &:before {
+                            -webkit-transform: translateX(26px);
+                            -ms-transform: translateX(26px);
+                            transform: translateX(26px);
+                        }
+                    }
+                }
+            }
+            .checkmark {
+                &.round {
+                    border-radius: 34px;
+                    &:before {
+                        border-radius: 50%;
+                    }
+                }
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color:  map-get($variablesCheck, grey);
+                -webkit-transition: .4s;
+                transition: .4s;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: map-get($colors, white);
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+    .check {
+        &.check-disabled {
+            cursor: default;
+            .checkmark {
+                opacity: 0.5;
+            }
+        }
+    }
+}

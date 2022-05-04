@@ -1,0 +1,182 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+<style>
+   
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+    h1{
+        font-size:70px;
+        margin-bottom:15px
+    }
+    .cmp-inputdate{
+        margin-top:0;
+        background-color:white;
+    }
+    h4{
+       
+        margin-bottom:10px;
+    }
+</style>
+
+<div class="cmp-inpdate">
+
+ <h1>Atom-Inputdate</h1>
+       
+       <!--Colores-->
+       <div>
+        <h2>Colores background</h2>
+        <hr>
+        <div>
+            <h4>input error<h4>
+            <input type="date" class="inp-date inp-date-error" placeholder="Escriba aquí">
+            <xmp> <input type="date" class="inp-date inp-date-error" placeholder="Escriba aquí"></xmp>
+        </div>
+
+        <div>
+            <h4>input Azul<h4>
+            <input type="date" class="inp-date inp-date-secondary" placeholder="Escriba aquí">
+            <xmp><input type="date" class="inp-date inp-date-secondary" placeholder="Escriba aquí"></xmp>
+        </div>
+
+        <div>
+            <h4>input verde<h4>
+            <input type="date" class="inp-date inp-date-tertiary" placeholder="Escriba aquí">
+            <xmp><input type="date" class="inp-date inp-date-tertiary" placeholder="Escriba aquí"></xmp>
+        </div>
+        
+        <div>
+            <h4>input dark<h4>
+            <input type="date" class="inp-date inp-date-dark" placeholder="Escriba aquí">
+            <xmp><input type="date" class="inp-date inp-date-dark" placeholder="Escriba aquí"></xmp>
+        </div>
+
+        <div>
+            <h4>input light<h4>
+            <input type="date" class="inp-date inp-date-light" placeholder="Escriba aquí">
+            <xmp><input type="date" class="inp-date inp-date-light" placeholder="Escriba aquí"></xmp>
+        </div>
+        
+
+        </div> 
+
+    <!--Contornos-->
+        <div>
+            <h2>Contornos</h2>
+            <div>
+                <h4>Input contorno error</h4>
+                <input type="date" class="inp-date inp-date-outline-error" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-outline-error" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno azul</h4>
+                <input type="date" class="inp-date inp-date-outline-secondary" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-outline-secondary" placeholder="Escriba aquí"></xmp>
+            </div>
+            
+            <div>
+                <h4>Input contorno verde</h4>
+                <input type="date" class="inp-date inp-date-outline-tertiary" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-outline-tertiary" placeholder="Escriba aquí"</xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno blanco</h4>
+                <input type="date" class="inp-date inp-date-outline-light" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-outline-light" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input contorno negro</h4>
+                <input type="date" class="inp-date inp-date-outline-dark" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-outline-dark" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Tamaño-->
+
+        <div>
+            <h2>Tamaños</h2>
+
+            <div>
+                <h4>Input grande</h4>
+                <input type="date" class="inp-date inp-date-lg" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-lg" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input pequeño</h4>
+                <input type="date" class="inp-date inp-date-sm" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-sm" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Estado-->
+
+        <div>
+            <h2>Estado</h2>
+
+            <div>
+                <h4>Input activo</h4>
+                <input type="date" class="inp-date inp-date-active" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-active" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input desactivado</h4>
+                <input type="date" class="inp-date inp-date-disable" placeholder="Escriba aquí" disabled="disabled">
+                <xmp><input type="date" class="inp-date inp-date-disable" placeholder="Escriba aquí" disabled="disabled"></xmp>
+            </div>
+
+        </div>
+
+
+    <!--Formas-->
+
+        <div>
+            <h2>Forma</h2>
+
+            <div>
+                <h4>Input redondeado</h4>
+                <input type="date" class="inp-date inp-date-round" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-round" placeholder="Escriba aquí"></xmp>
+            </div>
+
+            <div>
+                <h4>Input con bordes redondeado</h4>
+                <input type="date" class="inp-date inp-date-borderradius" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-borderradius" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+    <!--Efectos-->
+
+        <div>
+            <h2>Efectos</h2>
+
+            <div>
+                <h4>Sombra</h4>
+                <input type="date" class="inp-date inp-date-shadowbox" placeholder="Escriba aquí">
+                <xmp><input type="date" class="inp-date inp-date-shadowbox" placeholder="Escriba aquí"></xmp>
+            </div>
+
+        </div>
+
+
+
+</div>
+
+
+
+{% endblock %}

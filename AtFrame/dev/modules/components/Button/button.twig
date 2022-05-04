@@ -1,17 +1,206 @@
 {% extends "../../../template/template.twig" %}
 
 {% block page %}
+<style>
+   
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    body{
+        margin-left:10px;
+    }
+    h1{
+        font-size:70px;
+        margin-bottom:15px
+    }
+    .cmp-boton{
+        margin-top:0;
+        background-color:white;
+    }
+    h4{
+       
+        margin-bottom:10px;
+    }
+</style>
 
 <div class="cmp-boton">
-        <h1>Colores</h1>
-    <div class="colores">
-        <button class="btn btn-primary">Botón</button>
-        <button class="btn btn-secondary">Botón</button>
-        <button class="btn btn-tertiary">Botón</button>
-        <button class="btn btn-dark">Botón</button>
-        <button class="btn btn-light">Botón</button>
-      
-    </div>
+       <h1>Atom-Button</h1>
+       
+       <!--Colores-->
+       <div>
+        <h2>Colores</h2>
+        <hr>
+        <div>
+            <h4>Botón color primary<h4>
+            <button class="btn btn-primary">Botón</button>
+            <xmp><button class="btn btn-primary">Botón</button></xmp>
+        </div>
+
+        <div>
+         <h4>Botón color secondary<h4>
+            <button class="btn btn-secondary">Botón</button>
+            <xmp><button class="btn btn-secondary">Botón</button></xmp>        
+        </div>
+
+        <div>
+         <h4>Botón color tertiary<h4>
+            <button class="btn btn-tertiary">Botón</button>
+            <xmp><button class="btn btn-tertiary">Botón</button></xmp>
+        </div>
+
+        <div>
+         <h4>Botón color dark<h4>
+            <button class="btn btn-dark">Botón</button>
+            <xmp><button class="btn btn-dark">Botón</button></xmp>
+        </div>
+
+        <div>
+         <h4>Botón color light<h4>
+            <button class="btn btn-light">Botón</button>
+            <xmp><button class="btn btn-light">Botón</button></xmp>
+        </div>
+
+        </div> 
+         <!--Contorno y texto-->
+          
+        <div>
+        <h2>Contorno y texto</h2>
+            <hr>
+            <div>
+             <h4>Botón borde y texto color primary<h4>
+                <button class="btn btn-outline-primary">Botón</button>
+                <xmp><button class="btn btn-outline-primary">Botón></button></xmp>
+            </div>
+
+            <div>
+            <h4>Botón borde y texto color secondary<h4>
+                <button class="btn btn-outline-secondary">Botón</button>
+                <xmp><button class="btn btn-outline-secondary">Botón</button></xmp>
+            </div>
+
+            <div>
+            <h4>Botón borde y texto color tertiary<h4>
+                <button class="btn btn-outline-tertiary">Botón</button>
+                <xmp><button class="btn btn-outline-tertiary">Botón></button></xmp>
+            </div>
+
+            <div>
+            <h4>Botón borde y texto color dark<h4>
+                <button class="btn btn-outline-dark">Botón</button>
+                <xmp><button class="btn btn-outline-dark">Botón></button></xmp>
+            </div>
+            
+            <div>
+            <h4>Botón sin borde</h4>
+                <button class="btn btn-outline-light">Botón</button>
+                <xmp><button class="btn btn-outline-light">Botón</button></xmp>
+            </div>
+         </div>
+
+        <div>
+         
+            <h2>Tamaño</h2>
+            <hr>
+
+            <div>
+                <h4>Botón grande</h4>
+                <button class="btn btn-lg">Large Button</button>
+                <xmp><button class="btn btn-lg">Large Button</button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón pequeño</h4>
+                <button class="btn btn-sm">Small Button</button>
+                <xmp><button class="btn btn-sm">Small Button</button></xmp>
+            </div>
+
+        </div>
+
+        <div>
+         
+            <h2>Estado</h2>
+            <hr>
+
+            <div>
+                <h4>Botón activado</h4>
+                <button class="btn btn-active">Botón</button>
+                <xmp><button class="btn btn-active">Botón</button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón desactivado</h4>
+                <button class="btn btn-disable">Botón</button>
+                <xmp><button class="btn btn-disable">Botón</button></xmp>
+            </div>
+
+        </div>
+
+        <div>
+         
+            <h2>Forma</h2>
+            <hr>
+
+            <div>
+                <h4>Botón redondeado</h4>
+                <button class="btn btn-round">Botón</button>
+                <xmp><button class="btn btn-round">Botón</button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón con borde redondeado</h4>
+                <button class="btn btn-borderRound">Botón</button>
+                <xmp><button class="btn btn-borderRound">Botón</button></xmp>
+            </div>
+
+        </div>
+
+        <div>
+         
+            <h2>Efecto</h2>
+            <hr>
+
+            <div>
+                <h4>Botón con sombra</h4>
+                <button class="btn btn-shadowbox">Botón</button>
+                <xmp><button class="btn btn-shadowbox">Botón</button></xmp>
+            </div>
+
+        </div>
+         <div>
+         
+            <h2>Icono</h2>
+            <hr>
+
+            <div>
+                <h4>Botón con icono a la derecha</h4>
+                <button class="btn icon-btn--right"><img src="../../../assets/img/info.svg "><span>Botón</span></button>
+                <xmp><button class="btn icon-btn--right"><img src="../../../assets/img/info.svg "><span>Botón</span></button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón con icono a la izquierda</h4>
+                <button class="btn icon-btn--left"><img src="../../../assets/img/info.svg "><span>Botón</span></button>
+                <xmp><button class="btn icon-btn--left"><img src="../../../assets/img/info.svg "><span>Botón</span></button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón con icono a la derecha sin texto</h4>
+                <button class="btn icon-btn--right"><img src="../../../assets/img/info.svg "></button>
+                <xmp><button class="btn icon-btn--right"><img src="../../../assets/img/info.svg "></button></xmp>
+            </div>
+
+            <div>
+                <h4>Botón con icono a la izquierda sin texto</h4>
+                <button class="btn icon-btn--left"><img src="../../../assets/img/info.svg "></button>
+                <xmp><button class="btn icon-btn--left"><img src="../../../assets/img/info.svg "></button></xmp>
+            </div>
+        </div>
+
+       
+    
     </div>
 
 {% endblock %}

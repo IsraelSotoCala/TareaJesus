@@ -1,0 +1,209 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    h4{
+        margin-bottom:10px;
+    }
+    div{
+        padding:10px;
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:darkgrey;
+    }
+    .cmp-select{
+        background-color:white;
+    }
+       h1{
+        font-size:70px;
+        margin-bottom:15px
+    }
+    body{
+        margin-left:10px;
+    }
+</style>
+<div class="customCSS">
+
+    <div class="principal">
+        <div class="select">
+            <p>Texto Select</p>
+<input type="checkbox" id="desplegar">
+                <label class="btnarrow" for="desplegar"><img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                
+
+             <div id="contenido" >
+                <ul>
+                    <li><input id="op1" type="checkbox"><label for="op1">Hola<label></li>
+                    <li><input id="op2" type="checkbox"><label for="op2">Hola<label></li>
+                    <li><input id="op3" type="checkbox"><label for="op3">Hola<label></li>
+                    <li><input id="op4" type="checkbox"><label for="op4">Hola<label></li>
+                    <li><input id="op5" type="checkbox"><label for="op5">Hola<label></li>
+                    <li><input id="op6" type="checkbox"><label for="op6">Hola<label></li>
+                    <li><input id="op7" type="checkbox"><label for="op7">Hola<label></li>
+                    <li><input id="op8" type="checkbox"><label for="op8">Hola<label></li>
+                    <li><input id="op9" type="checkbox"><label for="op9">Hola<label></li>
+                    <li><input id="op10" type="checkbox"><label for="op10">Hola<label></li>
+                    
+                </ul>
+        </div>
+        </div>
+
+
+       
+</div>
+</div>
+
+
+
+
+
+<div class="cmp-select">
+
+    <h1>Atom-Select</h1>
+    
+        <div>
+            <h4>Select default</h4>
+            
+                <select class="select">
+                 
+                    <option selected>Open this select menu </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            <xmp>
+                <select class="select">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </xmp>
+        </div>
+
+         <div>
+            <h4>Select Grande</h4>
+            
+                <select class="select select-lg">
+                 
+                    <option selected>Open this select menu </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            <xmp>
+                <select class="select select-lg">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </xmp>
+        </div>
+
+  <div>
+            <h4>Select pequeño</h4>
+            
+                <select class="select select-sm">
+                 
+                    <option selected>Open this select menu </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            <xmp>
+                <select class="select select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </xmp>
+        </div>
+
+         <div>
+            <h4>Select pequeño</h4>
+            
+                <select class="select select-disable" disabled>
+                 
+                    <option selected>Open this select menu </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            <xmp>
+                <select class="select select-disable" disabled>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </xmp>
+        </div>
+</div>
+
+<div class="custom-select">
+<h4>Prueba custom 1</h4>
+    <div class="select">
+  <select>
+    <option value="1">Buendos</option>
+    <option value="2">días</option>
+    <option value="3">supongo</option>
+  </select>
+</div>
+
+<xmp>
+    <div class="select">
+  <select>
+    <option value="1">Buendos</option>
+    <option value="2">días</option>
+    <option value="3">supongo</option>
+  </select></xmp>
+</div>
+
+
+
+
+
+</div>
+<div class="selectJS">
+ <div class="principal">
+        <div class="select">
+            <span>Texto ejemplo</span>
+            <img class="desplegar" src="https://cdn-icons-png.flaticon.com/512/32/32195.png">
+        </div>
+        <div class="desplegable">
+            <ul class="contenido">
+                <li>
+                    <input type="checkbox" id="opcion1">
+                    <label for="opcion1">Opcion1</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcion2">
+                    <label for="opcion2">Opcion2</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcion3">
+                    <label for="opcion3">Opcion3</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcion4">
+                    <label for="opcion4">Opcion4</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcion5">
+                    <label for="opcion5">Opcion5</label>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+   
+</div>
+
+ <script src="../../../assets/js/select.js"></script>
+{% endblock %}
