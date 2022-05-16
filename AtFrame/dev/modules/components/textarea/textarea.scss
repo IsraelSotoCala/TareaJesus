@@ -1,5 +1,8 @@
 @import "../../../_scss/variables/colors";
 .cmp-textarea {
+    span {
+        display: none;
+    }
     textarea {
         display: block;
         width: 200px;
@@ -41,6 +44,13 @@
         &.txtarea-error {
             border: 2px solid red;
             background-color: map-get($variablesTextarea, rederror);
+            &~span {
+                margin-top: 2px;
+                margin-bottom: 6px;
+                display: block;
+                color: red;
+                font-size: 10px;
+            }
         }
         &:focus {
             outline: none;
@@ -56,9 +66,5 @@
             //     background-color: map-get($variablesTextarea, red-hover-error);
             // }
         }
-    }
-    .error-message {
-        color: red;
-        font-size: 10px;
     }
 }

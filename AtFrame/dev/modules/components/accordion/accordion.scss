@@ -1,0 +1,95 @@
+@import "../../../_scss/variables/colors";
+.cmp-accordion {
+    margin-bottom: 10px;
+    .principal {
+        border-collapse: collapse;
+        
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border-radius: 5px;
+        h2 {
+            font-family: map-get($variablesAccordion, font-bold);
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .accordion {
+            box-shadow: 0 4px 4px -2px black;
+            border-radius: 8px;
+            .desplegable {
+                border-radius: 5px;
+                width: 100%;
+                .close {
+                    height: 10px;
+                    justify-content: space-between;
+                    .icon-cross {
+                        filter: invert(1);
+                    }
+                }
+                label {
+                    border-radius: 0;
+                    cursor: pointer;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: map-get($variablesAccordion, radioaccordion-label );
+                    padding: 10px;
+                    .icon-arrow {
+                        transform: rotate(-90deg);
+                        transition: all 0.5s;
+                        filter: invert(1);
+                    }
+                    &:hover {
+                        background-color: map-get($variablesAccordion, radioaccordion-label-hover );
+                    }
+                }
+                .contenido {
+                    background-color: map-get($variablesAccordion, radioaccordion-content );
+                    max-height: 0px;
+                    text-align: left;
+                    transition: all 1s;
+                    padding: 0 1em;
+                    overflow: hidden;
+                }
+                input {
+                    display: none;
+                    &:checked {
+                        &~.contenido {
+                            max-height: 300px;
+                            padding: 10px;
+                            transition: all 1s;
+                        }
+                        &+label .icon-arrow {
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    &.checkBox-accordion{
+        .principal {
+           
+            .accordion {
+             
+                .desplegable {
+                    label {
+                      
+                        background-color: map-get($variablesAccordion, checkaccordion-label );
+                       
+                    }
+                    .contenido {
+                        background-color: map-get($variablesAccordion, checkaccordion-content );
+
+                        &:hover{
+                            background-color: map-get($variablesAccordion, checkaccordion-content-hover );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
