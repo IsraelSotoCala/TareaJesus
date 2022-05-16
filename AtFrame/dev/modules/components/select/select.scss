@@ -223,6 +223,8 @@
             flex-direction: column;
             width: 300px;
             height: 150px;
+            position: relative;
+
             .select {
                 display: flex;
                 background-color: lightsteelblue;
@@ -244,8 +246,11 @@
             }
             .desplegable {
                 background-color: steelblue;
-                max-height: 150px;
+                height: 150px;
                 display: none;
+                position: absolute;
+                top: 40px;
+        width: 300px;
                 &.active {
                     display: flex;
                     flex-direction: column;

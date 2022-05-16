@@ -1,0 +1,127 @@
+{% extends "../../../template/template.twig" %}
+
+{% block page %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.divEstetico{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+    
+       h1{
+        font-size:30px;
+        margin-bottom:15px
+    }
+  
+</style>
+
+
+
+
+<div class="divEstetico">
+
+<div class="cmp-accordion">
+<h1>Accordion - Radio</h1>
+       
+    <div class="principal">
+
+    <h2>Información</h2>
+
+        <div class="accordion"> <!--Contenedor del accordion-->
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="radio" name="rad" id="radio1">
+                <label for="radio1"> Sección 1 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="radio" name="rad" id="radio2">
+                <label for="radio2"> Sección 2 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="radio" name="rad" id="radio3">
+                <label for="radio3"> Sección 3 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="radio" name="rad" id="close">
+                <label class="close" for="close"> <img class="icon-arrow" src="../../../assets/img/x.svg">Cerrar</label>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="cmp-accordion checkBox-accordion">
+<h1>Accordion - checkBox</h1>
+       
+    <div class="principal">
+
+ <h2>Información</h2>
+
+        <div class="accordion"> <!--Contenedor del accordion-->
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="checkbox" name="rad" id="check1">
+                <label for="check1"> Sección 1 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="checkbox" name="rad" id="check2">
+                <label for="check2"> Sección 2 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+            <div class="desplegable"><!--Contenedor de una seccion del accordion-->
+                <input type="checkbox" name="rad" id="check3">
+                <label for="check3"> Sección 3 <img class="icon-arrow" src="../../../assets/img/chevron-down.svg"></label>
+
+                <div class="contenido"><!--Contenedor del texto-->
+                    <p> texto ejemplo  texto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplotexto ejemplo</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+</div>
+
+{% endblock %}
